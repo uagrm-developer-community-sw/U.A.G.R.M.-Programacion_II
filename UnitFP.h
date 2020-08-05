@@ -1,0 +1,30 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitFPH
+#define UnitFPH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
+//---------------------------------------------------------------------------
+class TFrmFP : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *PnlFP;
+	TImage *ImgLogoFP;
+	TButton *BtnRecursividadFP;
+	TButton *BtnConteoFP;
+	TButton *BtnSalirFP;
+	void __fastcall BtnRecursividadFPClick(TObject *Sender);
+	void __fastcall BtnSalirFPClick(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFrmFP(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFrmFP *FrmFP;
+//---------------------------------------------------------------------------
+#endif

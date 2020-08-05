@@ -1,0 +1,36 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitFPRH
+#define UnitFPRH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
+#include <Vcl.Menus.hpp>
+//---------------------------------------------------------------------------
+class TFrmFPRecursivo : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MnMnFPRRecursivo;
+	TPanel *PnlFPRecursivo;
+	TImage *ImgLogoFPRecursivo;
+	TEdit *EdtFPRecursivo1;
+	TEdit *EdtFPRecursivo2;
+	TEdit *EdtFPRecursivo3;
+	TEdit *EdtFPRecursivo4;
+	TButton *BtnFPRLimp1;
+	TButton *BtnFPRLimp2;
+	TButton *BtnFPRLimp3;
+	TButton *BtnFPRLimp4;
+	TLabel *LblFPRecursivo;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFrmFPRecursivo(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFrmFPRecursivo *FrmFPRecursivo;
+//---------------------------------------------------------------------------
+#endif
