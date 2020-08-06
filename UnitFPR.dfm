@@ -4528,8 +4528,16 @@ object FrmFPRecursivo: TFrmFPRecursivo
       object MostrarFPRecursivo: TMenuItem
         Caption = 'MOSTRAR'
         object MFPRecursivoPrimerosNN: TMenuItem
-          Caption = 'PRIMEROS N NUMEROS NATURALES'
+          Caption = 'PRIMEROS NUMEROS ENTEROS'
           OnClick = MFPRecursivoPrimerosNNClick
+        end
+        object PNumerosParesFPRecursivo: TMenuItem
+          Caption = 'PRIMEROS NUMEROS PARES'
+          OnClick = PNumerosParesFPRecursivoClick
+        end
+        object PNumerosImparesFPRecursivo: TMenuItem
+          Caption = 'PRIMEROS NUMEROS IMPARES'
+          OnClick = PNumerosImparesFPRecursivoClick
         end
       end
     end

@@ -35,6 +35,8 @@ __published:	// IDE-managed Components
 	TMenuItem *PracticosMMPFR;
 	TMenuItem *MostrarFPRecursivo;
 	TMenuItem *MFPRecursivoPrimerosNN;
+	TMenuItem *PNumerosParesFPRecursivo;
+	TMenuItem *PNumerosImparesFPRecursivo;
 	void __fastcall BtnFPRLimp1Click(TObject *Sender);
 	void __fastcall BtnFPRLimp2Click(TObject *Sender);
 	void __fastcall BtnFPRLimp3Click(TObject *Sender);
@@ -42,6 +44,8 @@ __published:	// IDE-managed Components
 	void __fastcall LimpiarMMPFRClick(TObject *Sender);
 	void __fastcall SalirMMPFRClick(TObject *Sender);
 	void __fastcall MFPRecursivoPrimerosNNClick(TObject *Sender);
+	void __fastcall PNumerosParesFPRecursivoClick(TObject *Sender);
+	void __fastcall PNumerosImparesFPRecursivoClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmFPRecursivo(TComponent* Owner);

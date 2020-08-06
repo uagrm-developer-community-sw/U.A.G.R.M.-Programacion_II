@@ -11,12 +11,31 @@ TFrmFPRecursivo *FrmFPRecursivo;
 
 //---------------------------------------------------------------------------
 // 							HERRAMIENTAS / ALGORITMOS
-//MOSTRAR
-void Mostrar(byte n){
+//*MOSTRAR*
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS ENTEROS //
+void Mostrar_primeros_n_enteros(byte n){
 	if (n==0) {
 	}else{
-		Mostrar(n-1);
+		Mostrar_primeros_n_enteros(n-1);
 		ShowMessage(n);
+	}
+}
+
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS PARES //
+void Mostrar_digitos_pares(byte n){
+	if (n==0) {
+	}else{
+		Mostrar_digitos_pares(n-1);
+		ShowMessage(n*2);
+	}
+}
+
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS IMPARES //
+void Mostrar_digitos_impares(byte n){
+	if (n==0) {
+	}else{
+		Mostrar_digitos_impares(n-1);
+		ShowMessage((n*2)-1);
 	}
 }
 //---------------------------------------------------------------------------
@@ -47,6 +66,9 @@ void __fastcall TFrmFPRecursivo::BtnFPRLimp4Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 //							MnMnFPRRecursivo
+//                       LLAMAR A LOS ALGORITMOS
+
+//LIMPIAR TODOS LOS EDITS
 void __fastcall TFrmFPRecursivo::LimpiarMMPFRClick(TObject *Sender)
 {
 	EdtFPRecursivo1->Clear();
@@ -55,14 +77,30 @@ void __fastcall TFrmFPRecursivo::LimpiarMMPFRClick(TObject *Sender)
 	EdtFPRecursivo4->Clear();
 }
 //---------------------------------------------------------------------------
+//CERRAR FORMULARIO
 void __fastcall TFrmFPRecursivo::SalirMMPFRClick(TObject *Sender)
 {
 	Close();
 }
 //---------------------------------------------------------------------------
-
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS ENTEROS //
 void __fastcall TFrmFPRecursivo::MFPRecursivoPrimerosNNClick(TObject *Sender)
 {
-	EdtFPRecursivo4->Text:= Mostrar(EdtFPRecursivo1->Text);
+	Mostrar_primeros_n_enteros(StrToInt(EdtFPRecursivo1->Text));
+
 }
 //---------------------------------------------------------------------------
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS PARES //
+void __fastcall TFrmFPRecursivo::PNumerosParesFPRecursivoClick(TObject *Sender)
+{
+	Mostrar_digitos_pares(StrToInt(EdtFPRecursivo1->Text));
+}
+//---------------------------------------------------------------------------
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS IMPARES //
+void __fastcall TFrmFPRecursivo::PNumerosImparesFPRecursivoClick(TObject *Sender)
+
+{
+	 Mostrar_digitos_impares(StrToInt(EdtFPRecursivo1->Text));
+}
+//---------------------------------------------------------------------------
+

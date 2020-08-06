@@ -4423,7 +4423,7 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Font.Color = clWindowText
       Font.Height = -27
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
+      Font.Style = []
       ParentFont = False
       TabOrder = 0
     end
@@ -4436,7 +4436,7 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Font.Color = clWindowText
       Font.Height = -27
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
+      Font.Style = []
       ParentFont = False
       TabOrder = 1
     end
@@ -4449,7 +4449,7 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Font.Color = clWindowText
       Font.Height = -27
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
+      Font.Style = []
       ParentFont = False
       TabOrder = 2
     end
@@ -4462,7 +4462,7 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Font.Color = clWindowText
       Font.Height = -27
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
+      Font.Style = []
       ParentFont = False
       TabOrder = 3
     end
@@ -4473,6 +4473,7 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Height = 41
       Caption = 'LIMPIAR'
       TabOrder = 4
+      OnClick = BtnFPRLimp1Click
     end
     object BtnFPRLimp2: TButton
       Left = 16
@@ -4481,6 +4482,7 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Height = 41
       Caption = 'LIMPIAR'
       TabOrder = 5
+      OnClick = BtnFPRLimp2Click
     end
     object BtnFPRLimp3: TButton
       Left = 16
@@ -4489,6 +4491,7 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Height = 41
       Caption = 'LIMPIAR'
       TabOrder = 6
+      OnClick = BtnFPRLimp3Click
     end
     object BtnFPRLimp4: TButton
       Left = 16
@@ -4497,31 +4500,48 @@ object FrmFPRecursivo: TFrmFPRecursivo
       Height = 41
       Caption = 'LIMPIAR'
       TabOrder = 7
+      OnClick = BtnFPRLimp4Click
     end
   end
   object MnMnFPRRecursivo: TMainMenu
     Left = 528
     Top = 128
-    object INICIO1: TMenuItem
+    object InicioMMPFR: TMenuItem
       Caption = 'INICIO'
-      object CARGAR1: TMenuItem
+      object InsertarMMPFR: TMenuItem
         Caption = 'INSERTAR'
       end
-      object DESCARGAR1: TMenuItem
+      object MostrarMMPFR: TMenuItem
         Caption = 'MOSTRAR'
       end
-      object LIMIPIAR1: TMenuItem
+      object LimpiarMMPFR: TMenuItem
         Caption = 'LIMIPIAR'
+        OnClick = LimpiarMMPFRClick
       end
-      object SALIR1: TMenuItem
+      object SalirMMPFR: TMenuItem
         Caption = 'SALIR'
+        OnClick = SalirMMPFRClick
       end
     end
-    object HERRAMIENTAS1: TMenuItem
+    object HerramientasMMPFR: TMenuItem
       Caption = 'HERRAMIENTAS'
+      object MostrarFPRecursivo: TMenuItem
+        Caption = 'MOSTRAR'
+        object MFPRecursivoPrimerosNN: TMenuItem
+          Caption = 'PRIMEROS NUMEROS ENTEROS'
+          OnClick = MFPRecursivoPrimerosNNClick
+        end
+        object PNumerosParesFPRecursivo: TMenuItem
+          Caption = 'PRIMEROS NUMEROS PARES'
+          OnClick = PNumerosParesFPRecursivoClick
+        end
+        object PNumerosImparesFPRecursivo: TMenuItem
+          Caption = 'PRIMEROS NUMEROS IMPARES'
+        end
+      end
     end
-    object PRACTICO1: TMenuItem
-      Caption = 'PRACTICO'
+    object PracticosMMPFR: TMenuItem
+      Caption = 'PRACTICOS'
     end
   end
 end

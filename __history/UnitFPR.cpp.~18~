@@ -12,11 +12,30 @@ TFrmFPRecursivo *FrmFPRecursivo;
 //---------------------------------------------------------------------------
 // 							HERRAMIENTAS / ALGORITMOS
 //MOSTRAR
-void Mostrar(byte n){
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS ENTEROS //
+void Mostrar_primeros_n_enteros(byte n){
 	if (n==0) {
 	}else{
-		Mostrar(n-1);
+		Mostrar_primeros_n_enteros(n-1);
 		ShowMessage(n);
+	}
+}
+
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS PARES //
+void Mostrar_digitos_pares(byte n){
+	if (n==0) {
+	}else{
+		Mostrar_digitos_pares(n-1);
+		ShowMessage(n*2);
+	}
+}
+
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS IMPARES //
+void Mostrar_digitos_impares(byte n){
+	if (n==0) {
+	}else{
+		Mostrar_digitos_impares(n-1);
+		ShowMessage((n*2)-1);
 	}
 }
 //---------------------------------------------------------------------------
@@ -60,4 +79,10 @@ void __fastcall TFrmFPRecursivo::SalirMMPFRClick(TObject *Sender)
 	Close();
 }
 //---------------------------------------------------------------------------
+//                          LLAMAR A LOS ALGORITMOS
+void __fastcall TFrmFPRecursivo::MFPRecursivoPrimerosNNClick(TObject *Sender)
+{
+	Mostrar_primeros_n_enteros(StrToInt(EdtFPRecursivo1->Text));
 
+}
+//---------------------------------------------------------------------------
