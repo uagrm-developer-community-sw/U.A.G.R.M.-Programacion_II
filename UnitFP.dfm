@@ -4394,8 +4394,8 @@ object FrmFP: TFrmFP
       81F991BEBAC0FC485FFF1F234366D99C4474FB0000000049454E44AE426082}
   end
   object PnlFP: TPanel
-    Left = 0
-    Top = 157
+    Left = -2
+    Top = 150
     Width = 202
     Height = 321
     Color = clSkyBlue

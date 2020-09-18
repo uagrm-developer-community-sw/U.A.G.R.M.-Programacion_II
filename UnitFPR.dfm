@@ -2,8 +2,8 @@ object FrmFPRecursivo: TFrmFPRecursivo
   Left = 0
   Top = 0
   Caption = 'RECURSIVIDAD'
-  ClientHeight = 433
-  ClientWidth = 595
+  ClientHeight = 680
+  ClientWidth = 759
   Color = clGrayText
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -3799,8 +3799,8 @@ object FrmFPRecursivo: TFrmFPRecursivo
   PixelsPerInch = 96
   TextHeight = 13
   object ImgLogoFPRecursivo: TImage
-    Left = 8
-    Top = 24
+    Left = 80
+    Top = 8
     Width = 102
     Height = 116
     AutoSize = True
@@ -4394,8 +4394,8 @@ object FrmFPRecursivo: TFrmFPRecursivo
       6082}
   end
   object LblFPRecursivo: TLabel
-    Left = 116
-    Top = 56
+    Left = 188
+    Top = 40
     Width = 443
     Height = 68
     Caption = 'RECURSIVIDAD'
@@ -4408,8 +4408,8 @@ object FrmFPRecursivo: TFrmFPRecursivo
   end
   object PnlFPRecursivo: TPanel
     Left = 0
-    Top = 160
-    Width = 577
+    Top = 392
+    Width = 758
     Height = 257
     Color = clSkyBlue
     ParentBackground = False
@@ -4503,9 +4503,53 @@ object FrmFPRecursivo: TFrmFPRecursivo
       OnClick = BtnFPRLimp4Click
     end
   end
+  object PnlFPRNE: TPanel
+    Left = 0
+    Top = 146
+    Width = 758
+    Height = 223
+    Color = clActiveCaption
+    DoubleBuffered = False
+    ParentBackground = False
+    ParentDoubleBuffered = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 1
+    Touch.ParentTabletOptions = False
+    Touch.TabletOptions = [toPressAndHold]
+    object BtnGroupMMPFRNE: TButtonGroup
+      Left = 0
+      Top = 16
+      Width = 758
+      Height = 193
+      ButtonOptions = [gboAllowReorder, gboFullSize, gboGroupStyle, gboShowCaptions]
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Items = <
+        item
+          Caption = '1) PROGRAMA QUE MUESTRA LOS PRIMEROS N N'#218'MEROS NATURALES'
+          OnClick = MFPRecursivoPrimerosNNClick
+        end
+        item
+          Caption = 
+            '2) PROGRAMA QUE MUESTRA LOS PRIMEROS N N'#218'MEROS NATURALES INVERTI' +
+            'DOS.'
+        end
+        item
+          Caption = '3) PROGRAMA QUE MUESTRA LOS PRIMEROS N N'#218'MEROS PARES.'
+        end
+        item
+          Caption = '4) PROGRAMA QUE MUESTRA LOS PRIMEROS N N'#218'MEROS IMPARES.'
+        end>
+      TabOrder = 0
+    end
+  end
   object MnMnFPRRecursivo: TMainMenu
-    Left = 528
-    Top = 128
+    Left = 712
+    Top = 16
     object InicioMMPFR: TMenuItem
       Caption = 'INICIO'
       object InsertarMMPFR: TMenuItem
@@ -4522,6 +4566,9 @@ object FrmFPRecursivo: TFrmFPRecursivo
         Caption = 'SALIR'
         OnClick = SalirMMPFRClick
       end
+    end
+    object N3: TMenuItem
+      Caption = '-'
     end
     object HerramientasMMPFR: TMenuItem
       Caption = 'HERRAMIENTAS'
@@ -4541,8 +4588,36 @@ object FrmFPRecursivo: TFrmFPRecursivo
         end
       end
     end
+    object N4: TMenuItem
+      Caption = '-'
+      Enabled = False
+    end
     object PracticosMMPFR: TMenuItem
       Caption = 'PRACTICOS'
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object NenteroMMPFR: TMenuItem
+      Caption = 'NENTEROS'
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object CadenasMMPFR: TMenuItem
+      Caption = 'CADENAS'
+    end
+    object N6: TMenuItem
+      Caption = '-'
+    end
+    object VectoresMMPFR: TMenuItem
+      Caption = 'VECTORES'
+    end
+    object N5: TMenuItem
+      Caption = '-'
+    end
+    object MatricesMMPFR: TMenuItem
+      Caption = 'MATRICES'
     end
   end
 end

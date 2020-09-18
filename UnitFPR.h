@@ -10,6 +10,7 @@
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Imaging.pngimage.hpp>
 #include <Vcl.Menus.hpp>
+#include <Vcl.ButtonGroup.hpp>
 //---------------------------------------------------------------------------
 class TFrmFPRecursivo : public TForm
 {
@@ -37,6 +38,18 @@ __published:	// IDE-managed Components
 	TMenuItem *MFPRecursivoPrimerosNN;
 	TMenuItem *PNumerosParesFPRecursivo;
 	TMenuItem *PNumerosImparesFPRecursivo;
+	TMenuItem *NenteroMMPFR;
+	TMenuItem *CadenasMMPFR;
+	TMenuItem *VectoresMMPFR;
+	TMenuItem *MatricesMMPFR;
+	TMenuItem *N1;
+	TMenuItem *N2;
+	TMenuItem *N3;
+	TMenuItem *N4;
+	TMenuItem *N5;
+	TMenuItem *N6;
+	TPanel *PnlFPRNE;
+	TButtonGroup *BtnGroupMMPFRNE;
 	void __fastcall BtnFPRLimp1Click(TObject *Sender);
 	void __fastcall BtnFPRLimp2Click(TObject *Sender);
 	void __fastcall BtnFPRLimp3Click(TObject *Sender);

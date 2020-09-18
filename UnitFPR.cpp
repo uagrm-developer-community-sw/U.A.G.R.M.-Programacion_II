@@ -21,6 +21,15 @@ void Mostrar_primeros_n_enteros(byte n){
 	}
 }
 
+// PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS ENTEROS INVERTIDOS //
+void Mostrar_primeros_n_enteros_invertidos(byte n){
+	if (n==0) {
+	}else{
+		ShowMessage(n);
+		Mostrar_primeros_n_enteros(n-1);
+	}
+}
+
 // PROGRAMA QUE MUESTRA LOS PRIMEROS N NÚMEROS PARES //
 void Mostrar_digitos_pares(byte n){
 	if (n==0) {
